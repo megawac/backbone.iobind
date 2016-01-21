@@ -1,26 +1,42 @@
 {
-  "author": "Jake Luer <@jakeluer>",
-  "name": "backbone.iobind",
-  "description": "Bind socket.io events to backbone models & collections.",
-  "version": "0.4.9",
-  "homepage": "https://noveogroup.github.io/backbone.iobind",
+  "name": "backbone.socketio-bind",
+  "version": "1.0.0",
+  "description": "Bind a Backbone Model or Collection to a socket.io socket",
+  "main": "dist/backbone.iobind.js",
+  "directories": {
+    "doc": "docs",
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "codex": "^0.0.6",
+    "colors": "^0.6.2",
+    "folio": "^0.2.1",
+    "jquery": "^1.8.3",
+    "socket.io-client": "^1.1.0",
+    "underscore": "^1.7.0",
+    "socket.io": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/noveogroup/backbone.iobind.git"
+    "url": "git+https://github.com/majiksystems/backbone.iobind.git"
   },
-  "engines": {
-    "node": ">= 0.4.0"
+  "keywords": [
+    "backbone",
+    "socket.io",
+    "binding"
+  ],
+  "author": "Majik Systems, Jake Luer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/majiksystems/backbone.iobind/issues"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "codex": "0.0.x",
-    "folio": "0.2.x",
-    "colors": "0.6.x",
-    "socket.io": "1.1.x",
-    "socket.io-client": "1.1.x",
-    "backbone": "1.1.x",
-    "underscore": "1.7.x",
-    "jquery": "1.8.3",
-    "mocha": "1.21.4"
-  }
+  "homepage": "https://github.com/majiksystems/backbone.iobind#readme"
 }

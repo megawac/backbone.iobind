@@ -1,6 +1,14 @@
+srcdir = lib/
 
-all:
-	@node support/compile.js
+modules =   ${srcdir}copyright.js\
+			${srcdir}prefix.js\
+			${srcdir}model.js\
+			${srcdir}collection.js\
+			${srcdir}sync.js\
+			${srcdir}suffix.js
+
+dist/backbone.iobind.js: ${modules}
+	cat > $@ $^
 
 serve:
 	@node example/app.js
